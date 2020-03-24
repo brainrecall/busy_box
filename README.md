@@ -9,19 +9,24 @@ It's a simple box with a button and two LEDs connected to a ESP8266. The ESP is 
 #TODO
 
 The Tasmota Module Configuration is set to:
-Module Type: Generic (0)
-D4 GPIO2: Button1 (17)
-D2 GPIO4: Relay1 (21)
-D1 GPIO5: Relay2 (22)
+Field | Setting
+----- | -------
+Module Type | Generic (0)
+D4 GPIO2 | Button1 (17)
+D2 GPIO4 | Relay1 (21)
+D1 GPIO5 | Relay2 (22)
 
 Then, obviuosly, setup Tasmota for WiFi and MQTT.
 
 There were a couple of options I turned on:
-SetOption19 1 #Turn on Home Assistant auto-discovery
-SetOption13 1 #Turn off multi-button press and hold
+Command | Usage
+------- | -----
+SetOption19 1 | Turn on Home Assistant auto-discovery
+SetOption13 1 | Turn off multi-button press and hold
 
 I then added the following Automations to Home Assistant:
 
+```yaml
 - id: '1585062349930'
   alias: Caitlin Busy
   description: ''
@@ -78,3 +83,4 @@ I then added the following Automations to Home Assistant:
     domain: switch
     entity_id: switch.sonoff2_2
     type: turn_off
+```
