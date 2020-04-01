@@ -8,6 +8,8 @@ It's a simple box with a button and two LEDs connected to a ESP8266. The ESP is 
 
 #TODO
 
+The box is a modified version of this: https://www.thingiverse.com/thing:1264391
+
 The Tasmota Module Configuration is set to:
 Field | Setting
 ----- | -------
