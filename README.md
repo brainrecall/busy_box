@@ -6,7 +6,7 @@ With everyone stuck at home, the wife wanted a passive way for me to let her kno
 
 It's a simple box with a button and two LEDs connected to a ESP8266. The ESP is programmed with Tasmota and configured to be connected to Home Assistant. A couple of Automations in Home Assistant make them work. See the YouTube video below:
 
-#TODO
+https://youtu.be/Oq3yEmL19mc
 
 The box is a modified version of this: https://www.thingiverse.com/thing:1264391
 
